@@ -7,12 +7,6 @@ int main(){
     int a[n+1];
     a[1] = 1;
     a[0] = 0;
-    int temp;
-    /* for(int i = 2; i <= n; i++){
-        temp = pre;
-        pre = pre +prepre;
-        prepre = temp;
-    } */
     for(int i = 2; i <=n; i++){
         a[i] = a[i-1] + a[i-2];
    }
